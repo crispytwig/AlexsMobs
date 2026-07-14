@@ -104,6 +104,11 @@ public class ItemDimensionalCarver extends Item {
         return 100F;
     }
 
+    @Override
+    public int getEnchantmentValue() {
+        return 10;
+    }
+
     public void onUseTick(Level level, LivingEntity player, ItemStack itemstack, int count) {
         player.swing(player.getUsedItemHand());
         RandomSource random = player.getRandom();
